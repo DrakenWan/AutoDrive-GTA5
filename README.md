@@ -88,6 +88,12 @@ If you do not have the ability to play GTA5, you can atleast work with step 3b t
 - We are performing Minibatch optimization, one way to speedup process is to increase batch size for training part. However, need to take into consideration the GPU memory constraints.
 
 
+### Future Work
+A roadmap of what is to be added in continuation
+
+- Add semantic segmentation model in cascade before the actual audtodrive model. This might help add more information in the image.
+
+- Take into consideration different movement outputs as well rather than just 5 keyboard inputs as the outputs. (which are wa, w, wd, s, no_input)
 
 
 ### Files
