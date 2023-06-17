@@ -98,7 +98,10 @@ Briefly explains all the files that are being used in the project below.
 
 - **visualise_training_data.py**: This file is used to run a sequence of training data captured so far.
 
-- **balance_data.py**: Mainly a redundant file as of now. Can be used to check the class label distribution statistics.
+- **balance_data.py**: This file is now obsolete.
+
+- **preprocess_data.py**: This file is changing the saved npy file format. The file had a python list of numpy arrays saved earlier. This format is cumbersome to work with when training the model. So this file will perform preprocessing on the saved file data. In future, I am thinking of implementing it as memory map for efficient access for releasing system memory.
+
 
 - **inception_v3.py**: Contains the Inception v3 model definition in pytorch
 
