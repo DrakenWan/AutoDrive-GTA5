@@ -102,7 +102,8 @@ def main():
             last_time = time.time()
 
             if len(imgs) % 500 == 0 and len(imgs) == len(labels):
-                print(len(imgs))
+                print("Dataset size: ", len(imgs))
+
                 np.save(dir_path + img_file_name,imgs)
                 np.save(dir_path + labels_file_name,labels)
         

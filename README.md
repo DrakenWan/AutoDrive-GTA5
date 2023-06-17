@@ -4,6 +4,13 @@
 
 Temporarily made public. Will be privated soon.
 
+### Some changes
+
+- Added `preprocess.py` file, which changes the data format of the stored numpy arrays for efficient processing during training and subsequent processes
+
+- `balance_data.py` file is obsolete now
+
+
 ### Requirements
 
 - Your own instance of GTA 5 game
@@ -27,7 +34,7 @@ Temporarily made public. Will be privated soon.
     - Note: if you want to pause for a break during data collection, you can toggle the `T` key to pause/unpause.
     - To **visualize the collected data**, you can run `python visualise_training_data.py`. This will open a cv2 window showing entire sequence of the collected training data along with key labels in cmd. If you want to quit you can press `q` button while cv2 window is active.
 
-4. `python balance_data.py` file can be run to just take a look at class imbalance stats of the data. The balancing of data had been explicitly disabled. Project report explains the reason in detail
+4. **Preprocess data**: This part is necessary to be run before the subsequent steps. It changes the data format in the saved numpy arrays for efficient processing during training and other steps that come after.
 
 5. **Model Training**: For training just run `python train_model.py`. This will take on average a time of 2 hrs on 1.5 GB worth of data. If you want you can explicitly increase the `batch_size` hyperparameter to increase the `time/epoch`. Epochs can be increased too but it will take a huge amount of time (in scale of days).
 

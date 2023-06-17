@@ -26,18 +26,12 @@ labels_file_name = 'train_labels.npy'
 
 print("Loading our dataset...")
 # looading our model data
-train_imgs = np.load(dir_path + img_file_name, allow_pickle=True)
-train_labels = np.load(dir_path + labels_file_name, allow_pickle=True)
-
-print("Preprocessing the data...")
-# a little changes
-X = np.stack(train_imgs, axis=0)
-y = np.stack(train_labels, axis=0)
+X = np.load(dir_path + img_file_name, allow_pickle=True)
+y = np.load(dir_path + labels_file_name, allow_pickle=True)
 
 X = X.astype(float)/255 # normalization for training
 
-del train_imgs
-del train_labels
+
 
 # custom dataset definition
 print("Loading DataLoader...")
