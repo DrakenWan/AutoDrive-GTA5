@@ -1,15 +1,10 @@
 # AutoDrive GTA5
 [source](https://github.com/DrakenWan/AutoDrive-GTA5)
+
+
  Autonomous Driving simulation in GTA 5 game
 
 Temporarily made public. Will be privated soon.
-
-### Some changes
-
-- Added `preprocess.py` file, which changes the data format of the stored numpy arrays for efficient processing during training and subsequent processes
-
-- `balance_data.py` file is obsolete now
-
 
 ### Requirements
 
