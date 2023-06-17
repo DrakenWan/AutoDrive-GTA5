@@ -14,14 +14,14 @@ labels = np.load(dir_path + labels_file_name, allow_pickle=True)
 
 
 print("Preprocess start...")
-stack_imgs = np.empty((len(images),) + images[0].shape)
+stack_imgs = np.empty((len(images),) + images[0].shape, dtype='int8')
 
 print("Stacking image data.")
 for i, arr in enumerate(tqdm(images)):
     stack_imgs[i] = arr
 
 print("processing labels data.")
-new_lbls = np.array(labels)
+new_lbls = np.array(labels, dtype='int')
 
 print("Stacking done. Statistics:-")
 print("Image data shape: ", stack_imgs.shape)
